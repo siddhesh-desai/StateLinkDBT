@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DBT_Profile</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/State Portal/Assets/favicon.png" type="image" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/State Portal/UI/home_styles.css" />
+    <link rel="stylesheet" href="profi.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Title Bar -->
+    <nav class="navbar" style="background-color: white">
+      <div class="container">
+        <!-- Logo Image -->
+        <a class="navbar-brand" href="#">
+          <img src="/State Portal/Assets/logo.png" alt="Bootstrap" />
+        </a>
+
+        <!-- Government Logo Image -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="/State Portal/Assets/gov_logo.png"
+            alt="Bootstrap"
+            width="100"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <!-- Navigation Bar -->
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: #bf360c; padding: 0%"
+    >
+      <div class="container">
+        <!-- For Responsive Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Fields -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item" style="background-color: #445c5f">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: white"
+              >
+                Profile
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white">All Schemes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white"
+                >My Applied Schemes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white"
+                >My Cancelled Schemes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white">Apply Now</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white">Grievances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white"
+                >Notifications</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white"
+                >Declaration Forms</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="profileField">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="Profile/user_form_verification.html"
+            >User Verification
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user_form_pd.html">Personal Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user_form_ad.html">Address Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user_form_od.html">Other Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user_form_ccd.html">Current Course</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user_form_pqd.html">Past Qualification</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user_form_hd.html">Hostel Details</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card-body p-4 p-sm-5">
+      <form class="row g-3">
+        <legend>
+          <h2><b>User Verification</b></h2>
+        </legend>
+        <hr />
+        <legend>Update Profile</legend>
+
+        <br />
+        <br />
+        <br />
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">
+            <h6>Aadhaar Number</h6>
+          </label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" id="colFormLabel" />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Verify</button>
+          </div>
+          <div class="col-sm-2">
+            <input
+              type="text"
+              class="form-control"
+              id="colFormLabel"
+              placeholder="Enter OTP"
+            />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Done</button>
+          </div>
+          <div class="col-auto">
+            <button
+              type="submit"
+              class="btn btn-primary mb-3 disabled"
+              style="background-color: green; border-color: green"
+            >
+              Successfully Verified!
+            </button>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">
+            <h6>Name</h6>
+          </label>
+          <div class="col-sm-4">
+            <input
+              type="text"
+              class="form-control"
+              id="colFormLabel"
+              value="SIII DIIII DDDDD"
+              disabled
+            />
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">
+            <h6>Email ID</h6>
+          </label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" id="colFormLabel" />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Verify</button>
+          </div>
+          <div class="col-sm-2">
+            <input
+              type="text"
+              class="form-control"
+              id="colFormLabel"
+              placeholder="Enter OTP"
+            />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Done</button>
+          </div>
+          <div class="col-auto">
+            <button
+              type="submit"
+              class="btn btn-primary mb-3 disabled"
+              style="background-color: green; border-color: green"
+            >
+              Successfully Verified!
+            </button>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">
+            <h6>Mobile Number</h6>
+          </label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" id="colFormLabel" />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Verify</button>
+          </div>
+          <div class="col-sm-2">
+            <input
+              type="text"
+              class="form-control"
+              id="colFormLabel"
+              placeholder="Enter OTP"
+            />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Done</button>
+          </div>
+          <div class="col-auto">
+            <button
+              type="submit"
+              class="btn btn-primary mb-3 disabled"
+              style="background-color: green; border-color: green"
+            >
+              Successfully Verified!
+            </button>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="d-grid" style="width: auto; align-items: center">
+          <button type="submit" class="btn btn-primary" id="btnCol">Save and Next</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function manageBtn(txt, rxt, a) {
+        var btn = document.getElementById(rxt);
+        if (txt.value.length === a) {
+          btn.disabled = false;
+        } else {
+          btn.disabled = true;
+        }
+      }
+    </script>
+  </body>
+</html>

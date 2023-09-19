@@ -109,7 +109,7 @@
     <div class="profileField">
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" href="Profile/user_form_verification.html"
+          <a class="nav-link" href="Profile/user_form_verification.html"
             >User Verification
           </a>
         </li>
@@ -117,7 +117,9 @@
           <a class="nav-link" href="user_form_pd.html">Personal Information</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="user_form_ad.html">Address Information</a>
+          <a class="nav-link active" href="user_form_ad.html"
+            >Address Information</a
+          >
         </li>
         <li class="nav-item">
           <a class="nav-link" href="user_form_od.html">Other Information</a>
@@ -137,126 +139,140 @@
     <div class="card-body p-4 p-sm-5">
       <form class="row g-3">
         <legend>
-          <h2><b>User Verification</b></h2>
+          <h2><b>Address Information</b></h2>
         </legend>
         <hr />
-        <legend>Update Profile</legend>
+        <legend>Permanent Address Details</legend>
 
-        <br />
-        <br />
-        <br />
-        <div class="row mb-3">
-          <label for="colFormLabel" class="col-sm-2 col-form-label">
-            <h6>Aadhaar Number</h6>
-          </label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="colFormLabel" />
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Verify</button>
-          </div>
-          <div class="col-sm-2">
-            <input
-              type="text"
-              class="form-control"
-              id="colFormLabel"
-              placeholder="Enter OTP"
-            />
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Done</button>
-          </div>
-          <div class="col-auto">
-            <button
-              type="submit"
-              class="btn btn-primary mb-3 disabled"
-              style="background-color: green; border-color: green"
-            >
-              Successfully Verified!
-            </button>
-          </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="1234 Main St"
+          />
         </div>
 
-        <div class="row mb-3">
-          <label for="colFormLabel" class="col-sm-2 col-form-label">
-            <h6>Name</h6>
-          </label>
-          <div class="col-sm-4">
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>Maharshtra</option>
+            <option>Tamil Nadu</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">District</label>
+          <select id="inputState" class="form-select">
+            <option>Kolhapur</option>
+            <option>Amhednagar</option>
+            <option>Pune</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Taluka</label>
+          <select id="inputState" class="form-select">
+            <option>Karveer</option>
+            <option>Ichalkaranji</option>
+            <option>Hatkalangle</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Village</label>
+          <input type="text" class="form-control" id="inputZip" />
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Pin Code</label>
+          <input type="text" class="form-control" id="inputZip" />
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="col-md-3">
+          <label for="inputState" class="form-label"
+            >Is Correspondence Address same as Permanent?</label
+          >
+          <br />
+          <div class="form-check form-check-inline">
             <input
-              type="text"
-              class="form-control"
-              id="colFormLabel"
-              value="SIII DIIII DDDDD"
-              disabled
+              class="form-check-input"
+              type="radio"
+              name="exampleRadios"
+              id="exampleRadios1"
+              value="option1"
             />
+            <label class="form-check-label" for="exampleRadios1"> Yes </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="exampleRadios"
+              id="exampleRadios2"
+              value="option2"
+            />
+            <label class="form-check-label" for="exampleRadios2"> No </label>
           </div>
         </div>
         <br />
         <br />
         <br />
+        <br />
+        <legend>Correspondence Address Details</legend>
 
-        <div class="row mb-3">
-          <label for="colFormLabel" class="col-sm-2 col-form-label">
-            <h6>Email ID</h6>
-          </label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="colFormLabel" />
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Verify</button>
-          </div>
-          <div class="col-sm-2">
-            <input
-              type="text"
-              class="form-control"
-              id="colFormLabel"
-              placeholder="Enter OTP"
-            />
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Done</button>
-          </div>
-          <div class="col-auto">
-            <button
-              type="submit"
-              class="btn btn-primary mb-3 disabled"
-              style="background-color: green; border-color: green"
-            >
-              Successfully Verified!
-            </button>
-          </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="1234 Main St"
+          />
         </div>
 
-        <div class="row mb-3">
-          <label for="colFormLabel" class="col-sm-2 col-form-label">
-            <h6>Mobile Number</h6>
-          </label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="colFormLabel" />
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Verify</button>
-          </div>
-          <div class="col-sm-2">
-            <input
-              type="text"
-              class="form-control"
-              id="colFormLabel"
-              placeholder="Enter OTP"
-            />
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Done</button>
-          </div>
-          <div class="col-auto">
-            <button
-              type="submit"
-              class="btn btn-primary mb-3 disabled"
-              style="background-color: green; border-color: green"
-            >
-              Successfully Verified!
-            </button>
-          </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>Maharshtra</option>
+            <option>Tamil Nadu</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">District</label>
+          <select id="inputState" class="form-select">
+            <option>Kolhapur</option>
+            <option>Amhednagar</option>
+            <option>Pune</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Taluka</label>
+          <select id="inputState" class="form-select">
+            <option>Karveer</option>
+            <option>Ichalkaranji</option>
+            <option>Hatkalangle</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Village</label>
+          <input type="text" class="form-control" id="inputZip" />
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Pin Code</label>
+          <input type="text" class="form-control" id="inputZip" />
         </div>
 
         <br />
@@ -267,6 +283,10 @@
 
         <div class="d-grid" style="width: auto; align-items: center">
           <button type="submit" class="btn btn-primary" id="btnCol">Save and Next</button>
+        </div>
+
+        <div class="d-grid" style="width: auto; align-items: center">
+          <button type="reset" class="btn btn-primary" id="btnCol">Reset</button>
         </div>
       </form>
     </div>

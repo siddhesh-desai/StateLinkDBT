@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MahaDBT|Profile</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/State Portal/Assets/favicon.png" type="image" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/State Portal/UI/home_styles.css" />
+    <link rel="stylesheet" href="profi.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Title Bar -->
+    <nav class="navbar" style="background-color: white">
+      <div class="container">
+        <!-- Logo Image -->
+        <a class="navbar-brand" href="#">
+          <img src="/State Portal/Assets/logo.png" alt="Bootstrap" />
+        </a>
+
+        <!-- Government Logo Image -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="/State Portal/Assets/gov_logo.png"
+            alt="Bootstrap"
+            width="100"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <!-- Navigation Bar -->
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: #bf360c; padding: 0%"
+    >
+      <div class="container">
+        <!-- For Responsive Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Fields -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item" style="background-color: #445c5f">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: white"
+              >
+                Profile
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white">All Schemes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white"
+                >My Applied Schemes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white"
+                >My Cancelled Schemes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white">Apply Now</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white">Grievances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white"
+                >Notifications</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white"
+                >Declaration Forms</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="profileField">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link " href="Profile/user_form_verification.html"
+            >User Verification
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user_form_pd.html">Personal Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user_form_ad.html">Address Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user_form_od.html">Other Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="user_form_ccd.html">Current Course</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user_form_pqd.html">Past Qualification</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user_form_hd.html">Hostel Details</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="card-body p-4 p-sm-5">
+        <form class="row g-3">
+            <legend>
+                <h2><b>Current Course Information</b></h2>
+            </legend>
+            <hr />
+            <legend>Current Course Details</legend>
+
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Admission Year in Current Course</label>
+                <select id="inputState" class="form-select">
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Institute State</label>
+                <select id="inputState" class="form-select">
+                    <option>Choose...</option>
+                    <option>Maharshtra</option>
+                    <option>Tamil Nadu</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">Institute District</label>
+                <select id="inputState" class="form-select">
+                    <option>Kolhapur</option>
+                    <option>Amhednagar</option>
+                    <option>Pune</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">Institute Taluka</label>
+                <select id="inputState" class="form-select">
+                    <option>Karveer</option>
+                    <option>Ichalkaranji</option>
+                    <option>Hatkalangle</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">Qualification Level</label>
+                <select id="inputState" class="form-select">
+                    <option>High School</option>
+                    <option>Undergraduate Level</option>
+                    <option>PostGraduate Level</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">Stream</label>
+                <select id="inputState" class="form-select">
+                    <option>Engineering</option>
+                    <option>Medical</option>
+                    <option>Pharmacy</option>
+                </select>
+            </div>
+
+            <div class="col-md-8">
+                <label for="inputZip" class="form-label">College Name</label>
+                <select id="inputState" class="form-select">
+                    <option>VIT Pune</option>
+                    <option>PICT</option>
+                    <option>VIIT</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">Course Name</label>
+                <select id="inputState" class="form-select">
+                    <option>Computer Engineering</option>
+                    <option>Information Technology</option>
+                    <option>Artificial Intelligence and Data Science</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">Admission Type</label>
+                <select id="inputState" class="form-select">
+                    <option>Through CAP/ Govt. Quota</option>
+                    <option>Through National/ JEE Score</option>
+                    <option>Through Management Quota</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">CET/Merit Percentage</label>
+                <input type="text" class="form-control" id="inputZip" />
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">CET Admit Card Number</label>
+                <input type="text" class="form-control" id="inputZip" />
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputZip" class="form-label">Admit Card</label><br />
+                <div class="input-group">
+                    <input type="file" class="form-control" id="inputGroupFile02" />
+                    <button type="view" class="btn btn-secondary">View Document</button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputZip" class="form-label">CAP ID Certificate</label><br />
+                <div class="input-group">
+                    <input type="file" class="form-control" id="inputGroupFile02" />
+                    <button type="view" class="btn btn-secondary">View Document</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">Year of Study</label>
+                <select id="inputState" class="form-select">
+                    <option>--Select--</option>
+                    <option>First Year</option>
+                    <option>Second Year</option>
+                    <option>Third Year</option>
+                    <option>Fourth Year</option>
+                    <option>Fifth Year</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">Completed or Continue?</label>
+                <select id="inputState" class="form-select">
+                    <option>--Select--</option>
+                    <option>Completed</option>
+                    <option>Continued</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">Is Proffesional?</label>
+                <select id="inputState" class="form-select">
+                    <option>--Select--</option>
+                    <option>Professional Course</option>
+                    <option>Continued</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">Is Admission through Open or Reserved Category?</label>
+                <select id="inputState" class="form-select">
+                    <option>--Select--</option>
+                    <option>Open</option>
+                    <option>Selected Category</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">Gap years</label>
+                <input type="text" class="form-control" id="inputZip" />
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">Mode</label>
+                <select id="inputState" class="form-select">
+                    <option>--Select--</option>
+                    <option>Regular</option>
+                    <option>Distance</option>
+                </select>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="d-grid" style="width: auto; align-items: center">
+                <button type="submit" class="btn btn-primary" id="btnCol">Save and Next</button>
+            </div>
+
+            <div class="d-grid" style="width: auto; align-items: center">
+                <button type="reset" class="btn btn-primary" id="btnCol">Reset</button>
+            </div>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <legend>Your Saved Details</legend>
+        </form>
+        <br />
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Sr. no.</th>
+                    <th scope="col">Year of Study</th>
+                    <th scope="col">Admission Date</th>
+                    <th scope="col">Admission Year in College/Institute</th>
+                    <th scope="col">College/School Name</th>
+                    <th scope="col">Course Name</th>
+                    <th scope="col">University Name</th>
+                    <th scope="col">Completed</th>
+                    <th scope="col">Result</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>First Year</td>
+                    <td>20/12/21</td>
+                    <td>NA</td>
+                    <td>VIT Pune</td>
+                    <td>Artificial Intillegence and Data Science</td>
+                    <td>Savitribai Phule Pune University</td>
+                    <td>Pursuing</td>
+                    <td>NA</td>
+                    <td><button href="#" class="btn btn-secondary">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function manageBtn(txt, rxt, a) {
+        var btn = document.getElementById(rxt);
+        if (txt.value.length === a) {
+          btn.disabled = false;
+        } else {
+          btn.disabled = true;
+        }
+      }
+    </script>
+  </body>
+</html>

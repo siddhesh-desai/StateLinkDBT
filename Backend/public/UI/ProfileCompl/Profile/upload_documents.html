@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Upload</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" style="background-color: white">
+        <div class="container">
+          <!-- Logo Image -->
+          <a class="navbar-brand" href="#">
+            <img src="/State Portal/Assets/logo.png" alt="Bootstrap" />
+          </a>
+  
+          <!-- Government Logo Image -->
+          <a class="navbar-brand" href="#">
+            <img
+              src="/State Portal/Assets/gov_logo.png"
+              alt="Bootstrap"
+              width="100"
+            />
+          </a>
+        </div>
+      </nav>
+  
+      <!-- Navigation Bar -->
+      <nav
+        class="navbar navbar-expand-lg"
+        style="background-color: #bf360c; padding: 0%"
+      >
+        <div class="container">
+          <!-- For Responsive Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Fields -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link "
+                  aria-current="page"
+                  href="#"
+                  style="color: white"
+                >
+                  Profile
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white">All Schemes</a>
+              </li>
+              <li class="nav-item"  style="background-color: #445c5f">
+                <a class="nav-link active" href="#" style="color: white"
+                  >My Applied Schemes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white"
+                  >My Cancelled Schemes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white">Apply Now</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white">Grievances</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white"
+                  >Notifications</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white"
+                  >Declaration Forms</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container mt-5">
+        <h2>Upload Documents</h2>
+        <br>
+        <form id="document-form" enctype="multipart/form-data">
+            <!-- Add dynamic document items here -->
+        </form>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery (optional, but required for some Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Custom CSS to change the button color */
+        .custom-upload-button {
+            background-color: #bf360c;
+            color: #ffffff; /* Text color */
+            transition: background-color 0.3s; /* Transition for hover effect */
+        }
+
+        .custom-upload-button:hover {
+            background-color: #8d2602;
+            border-color: #8d2602;
+        }
+
+        .custom-upload-button:active {
+            background-color: #445c5f; /* Color on click */
+        }
+    </style>
+
+    <script>
+        // JavaScript code to dynamically add document items
+        function addDocumentItem(documentName) {
+            const documentForm = document.getElementById('document-form');
+            const documentNumber = documentForm.elements.length + 1;
+
+            // Create a div to hold the document name and upload elements
+            const documentDiv = document.createElement('div');
+            documentDiv.className = 'form-row mb-2';
+
+            // Create a label for the document name
+            const documentNameLabel = document.createElement('label');
+            documentNameLabel.className = 'col-md-4 mr-2 mt-1';
+            documentNameLabel.textContent = documentName;
+
+            // Create a file input for document upload
+            const uploadInput = document.createElement('input');
+            uploadInput.type = 'file';
+            uploadInput.className = 'form-control-file col-md-4 mr-2';
+            uploadInput.name = `file${documentNumber}`;
+
+            // Create an upload button
+            const uploadButton = document.createElement('button');
+            uploadButton.type = 'button';
+            uploadButton.className = 'btn btn-primary col-md-2 custom-upload-button'; // Apply custom class
+            uploadButton.textContent = 'Upload';
+
+            // Append label, input, and button to the form
+            documentDiv.appendChild(documentNameLabel);
+            documentDiv.appendChild(uploadInput);
+            documentDiv.appendChild(uploadButton);
+            documentForm.appendChild(documentDiv);
+        }
+
+        // Specify the document names here
+        const documentNames = [
+            'Aadhar Card',
+            'SSC (10th std) Marksheet',
+            'School/College Leaving Certificate',
+            'Bank Passbook',
+            'All semester Marksheets',
+            'HSC (12th) Marksheet',
+            'Previous Year Marksheet',
+            'College fee receipt',
+            'Cast Certificate',
+            'Income Certificate of the current financial year',
+            'Rashan Card',
+            'Gap Certificate (if required)',
+            'Domicile Certificate',
+            'Self Declaration',
+            'Hostel Certificate (if required)',
+            'Cap allotment letter',
+            'Handicap Certificate (if required)'
+        ];
+
+        // Add document items for each document name
+        documentNames.forEach(addDocumentItem);
+    </script>
+</body>
+</html>

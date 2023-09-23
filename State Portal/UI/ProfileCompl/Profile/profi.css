@@ -1,6 +1,7 @@
 
 #btnCol{
     background-color: #bf360c;
+    align-items: center;
 }
 
 #btnCol:hover{

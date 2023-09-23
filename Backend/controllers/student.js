@@ -127,6 +127,7 @@ const upload_hsc_marksheet = async (req, res, next) => {
 const upload_caste_cert = async (req, res, next) => {
     try {
         // console.log(req.file)
+        // console.log(first)
         if(!req.file) {
             return res.redirect('/student/upload/personal');
         }
@@ -138,7 +139,7 @@ const upload_caste_cert = async (req, res, next) => {
         };
         const snapshot = await uploadBytesResumable(storageRef, req.file.buffer, metadata);
         const downloadURL = await getDownloadURL(snapshot.ref);
-		const result = await Student.findByIdAndUpdate(res.locals.user._id,  { $set: {casteUploded: true, caste:downloadURL, casteCategory} }, { new: true });
+		const result = await Student.findByIdAndUpdate(res.locals.user._id,  { $set: {casteUploded: true, casteCretificate:downloadURL, casteCategory} }, { new: true });
         console.log('File successfully uploaded.', result);
         return res.redirect('/student/upload/personal')
     } catch (error) {

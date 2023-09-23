@@ -54,7 +54,7 @@ const upload_addhar = async (req, res, next) => {
 }
 
 const personalInfo_get = (req, res, next) => {
-    res.render('student/personalInfo')
+    res.render('student/personalInfo', {user:res.locals.user})
 }
 
 const upload_bank_passbook = async (req, res, next) => {
@@ -62,6 +62,7 @@ const upload_bank_passbook = async (req, res, next) => {
         if(!req.file) {
             return res.redirect('/student/upload/personal');
         }
+        const {bankAccountNumber, bankIFSCode} = req.body;
         const filename = `bank_passbook_${res.locals.user._id}`
         const storageRef = ref(storage, `files/${filename}`);
         const metadata = {

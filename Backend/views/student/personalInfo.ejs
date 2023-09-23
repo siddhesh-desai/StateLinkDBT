@@ -600,30 +600,41 @@
         <br>
         <hr>
         <legend>Bank Details</legend>
-
-        <div class="col-md-4">
-          <label for="inputZip" class="form-label">Bank Account Number</label>
-          <input type="text" class="form-control" id="inputZip" />
-        </div>
-
-        <div class="col-md-4">
-          <label for="inputZip" class="form-label">IFSC Code</label>
-          <input type="text" class="form-control" id="inputZip" />
-        </div>
-
-        <div class="col-md-4">
-          <label for="inputZip" class="form-label">Branch Name</label>
-          <input type="text" class="form-control" id="inputZip" />
-        </div>
-
-        <div class="" style="width: 400px;">
-            <label for="inputZip" class="form-label">Income Certificate</label
-            ><br />
-            <div class="input-group">
-              <input type="file" class="form-control" id="inputGroupFile02" />
-              <button type="view" class="btn btn-secondary">View Document</button>
-            </div>
+        <form action="/student/upload/domicile" class="row g-3" method="post" enctype="multipart/form-data">
+          <div class="col-md-4">
+            <label for="inputZip" class="form-label">Bank Account Number</label>
+            <input type="text" class="form-control" name="bankAccountNumber" id="inputZip" />
           </div>
+
+          <div class="col-md-4">
+            <label for="inputZip" class="form-label">IFSC Code</label>
+            <input type="text" class="form-control" name="bankIFSCode" id="inputZip" />
+          </div>
+
+          <!-- <div class="col-md-4">
+            <label for="inputZip" class="form-label">Branch Name</label>
+            <input type="text" class="form-control" id="inputZip" />
+          </div> -->
+
+          <div class="" style="width: 400px;">
+              <label for="inputZip" class="form-label">Income Certificate</label
+              ><br />
+              <div class="input-group">
+                <input type="file" class="form-control" name="passbook" id="inputGroupFile02" />
+                <!-- <button type="view" class="btn btn-secondary">View Document</button> -->
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Upload Bank Passbook</label
+                ><br />
+                <div class="input-group">
+                  <!-- <input type="file" class="form-control" id="inputGroupFile02" /> -->
+                  <button type="submit" class="btn btn-primary mb-3"
+                  style="background-color: green; border-color: green">Upload</button>
+                </div>
+              </div>
+          </form>
         <br />
         <br />
         <br />

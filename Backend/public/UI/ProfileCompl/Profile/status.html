@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Status</title>
+    <!-- Add Bootstrap CSS link here -->
+    <!-- Favicon -->
+    <link rel="icon" href="/State Portal/Assets/favicon.png" type="image" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/State Portal/UI/home_styles.css" />
+    <link rel="stylesheet" href="profi.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for column headers */
+        .custom-bg {
+            background-color: #bf360c;
+            color: white;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" style="background-color: white">
+        <div class="container">
+          <!-- Logo Image -->
+          <a class="navbar-brand" href="#">
+            <img src="/State Portal/Assets/logo.png" alt="Bootstrap" />
+          </a>
+  
+          <!-- Government Logo Image -->
+          <a class="navbar-brand" href="#">
+            <img
+              src="/State Portal/Assets/gov_logo.png"
+              alt="Bootstrap"
+              width="100"
+            />
+          </a>
+        </div>
+      </nav>
+  
+      <!-- Navigation Bar -->
+      <nav
+        class="navbar navbar-expand-lg"
+        style="background-color: #bf360c; padding: 0%"
+      >
+        <div class="container">
+          <!-- For Responsive Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Fields -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link "
+                  aria-current="page"
+                  href="#"
+                  style="color: white"
+                >
+                  Profile
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white">All Schemes</a>
+              </li>
+              <li class="nav-item"  style="background-color: #445c5f">
+                <a class="nav-link active" href="#" style="color: white"
+                  >My Applied Schemes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white"
+                  >My Cancelled Schemes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white">Apply Now</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white">Grievances</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white"
+                  >Notifications</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white"
+                  >Declaration Forms</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container mt-5">
+        <h1>Scholarship Status</h1>
+        <br>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="custom-bg">Scholarship Name</th>
+                    <th class="custom-bg">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Scholarship 1</td>
+                    <td>Approved</td>
+                </tr>
+                <tr>
+                    <td>Scholarship 2</td>
+                    <td>Desk 2</td>
+                </tr>
+                <tr>
+                    <td>Scholarship 3</td>
+                    <td>Rejected (Incomplete Application)</td>
+                </tr>
+                <!-- Add more scholarship entries as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery (if needed) scripts here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

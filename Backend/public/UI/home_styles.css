@@ -1,0 +1,26 @@
+/* Navigation Bar Item */
+.nav-item {
+    border-style: solid;
+    border-width: 0px;
+    border-left-width: 1px;
+    /* border-right-width: 1px; */
+    border-color: #ab2f2f;
+    padding: 8px;
+
+}
+
+/* Navigation Bar Item - Hover*/
+.nav-item:hover {
+    background-color: #445c5f;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.nav-item:hover a {
+    color: #fff;
+}
+
+/* Navigation Bar Item Text*/
+.nav-link {
+    color: white;
+}

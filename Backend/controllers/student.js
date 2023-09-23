@@ -32,6 +32,9 @@ const upload_addhar_get = (req, res, next) => {
 
 const upload_addhar = async (req, res, next) => {
     try {
+        if(!req.file) {
+            return res.redirect('/student/upload/aadhaar');
+        }
         const filename = `addhar_card_${res.locals.user._id}`
         const storageRef = ref(storage, `files/${filename}`);
         const metadata = {
@@ -41,7 +44,7 @@ const upload_addhar = async (req, res, next) => {
         const downloadURL = await getDownloadURL(snapshot.ref);
 		const result = await Student.findByIdAndUpdate(res.locals.user._id,  { $set: {addharUploded: true, addhar:downloadURL} }, { new: true });
         console.log('File successfully uploaded.', result);
-        return res.redirect('/student/upload/personal')
+        return res.redirect('/student/upload/aadhaar')
         // return res.send(result)
     } catch (error) {
         console.log(error)
@@ -56,6 +59,9 @@ const personalInfo_get = (req, res, next) => {
 
 const upload_bank_passbook = async (req, res, next) => {
     try {
+        if(!req.file) {
+            return res.redirect('/student/upload/personal');
+        }
         const filename = `bank_passbook_${res.locals.user._id}`
         const storageRef = ref(storage, `files/${filename}`);
         const metadata = {
@@ -75,6 +81,9 @@ const upload_bank_passbook = async (req, res, next) => {
 
 const upload_ssc_marksheet = async (req, res, next) => {
     try {
+        if(!req.file) {
+            return res.redirect('/student/upload/personal');
+        }
         const filename = `ssc_marksheet_${res.locals.user._id}`
         const storageRef = ref(storage, `files/${filename}`);
         const metadata = {
@@ -94,6 +103,9 @@ const upload_ssc_marksheet = async (req, res, next) => {
 
 const upload_hsc_marksheet = async (req, res, next) => {
     try {
+        if(!req.file) {
+            return res.redirect('/student/upload/personal');
+        }
         const filename = `hsc_marksheet_${res.locals.user._id}`
         const storageRef = ref(storage, `files/${filename}`);
         const metadata = {
@@ -113,6 +125,10 @@ const upload_hsc_marksheet = async (req, res, next) => {
 
 const upload_caste_cert = async (req, res, next) => {
     try {
+        // console.log(req.file)
+        if(!req.file) {
+            return res.redirect('/student/upload/personal');
+        }
         const filename = `caste_cert_${res.locals.user._id}`
         const storageRef = ref(storage, `files/${filename}`);
         const casteCategory = req.body.caste
@@ -133,6 +149,9 @@ const upload_caste_cert = async (req, res, next) => {
 
 const upload_income_cert = async (req, res, next) => {
     try {
+        if(!req.file) {
+            return res.redirect('/student/upload/personal');
+        }
         const familyAnnualIncome = req.body.income
         const filename = `income_cert_${res.locals.user._id}`
         const storageRef = ref(storage, `files/${filename}`);
@@ -153,6 +172,9 @@ const upload_income_cert = async (req, res, next) => {
 
 const upload_domicile_cert = async (req, res, next) => {
     try {
+        if(!req.file) {
+            return res.redirect('/student/upload/personal');
+        }
         const domicileState = req.body.state
         const filename = `domicile_cert_${res.locals.user._id}`
         const storageRef = ref(storage, `files/${filename}`);

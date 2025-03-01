@@ -1,102 +1,38 @@
 /* Navigation Bar Item */
 .nav-item {
-    border-style: solid;
-    border-width: 0px;
-    border-left-width: 1px;
-    /* border-right-width: 1px; */
-    border-color: #ab2f2f;
-    padding: 8px;
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 1px;
+  /* border-right-width: 1px; */
+  border-color: #ab2f2f;
+  padding: 8px;
 
 }
 
 /* Navigation Bar Item - Hover*/
 .nav-item:hover {
-    background-color: #445c5f;
-    border-left-color: transparent;
-    border-right-color: transparent;
+  background-color: #445c5f;
+  border-left-color: transparent;
+  border-right-color: transparent;
 }
 
 .nav-item:hover a {
-    color: #fff;
+  color: #fff;
 }
 
 /* Navigation Bar Item Text*/
 .nav-link {
-    color: white;
+  color: white;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .login-page {
-<<<<<<< HEAD
-    width: 800px;
-    padding: 4% 0 0;
-    margin: auto;
-}
-
-.form {
-    position: relative;
-    z-index: 1;
-    background: #FFFFFF;
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-
-.form input {
-    font-family: "Roboto", sans-serif;
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-
-.form button {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: #ab2f2f;
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-}
-
-.form button:hover,
-.form button:active,
-.form button:focus {
-    background: #ab2f2f;
-}
-
-.form .message {
-    margin: 15px 0 0;
-    color: #b3b3b3;
-    font-size: 12px;
-}
-
-.form .message a {
-    color: #ab2f2f;
-    text-decoration: none;
-}
-
-.form .register-form {
-    display: none;
-}
-=======
   width: 800px;
   padding: 4% 0 0;
   margin: auto;
 }
+
 .form {
   position: relative;
   z-index: 1;
@@ -107,6 +43,7 @@
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
 .form input {
   font-family: "Roboto", sans-serif;
   outline: 0;
@@ -118,6 +55,7 @@
   box-sizing: border-box;
   font-size: 14px;
 }
+
 .form button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -132,19 +70,83 @@
   transition: all 0.3 ease;
   cursor: pointer;
 }
-.form button:hover,.form button:active,.form button:focus {
+
+.form button:hover,
+.form button:active,
+.form button:focus {
   background: #ab2f2f;
 }
+
 .form .message {
   margin: 15px 0 0;
   color: #b3b3b3;
   font-size: 12px;
 }
+
 .form .message a {
   color: #ab2f2f;
   text-decoration: none;
 }
+
 .form .register-form {
   display: none;
 }
->>>>>>> 4740fd0400f365dbe2e0db514817c57b94795aa1
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #ab2f2f;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #ab2f2f;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.form .message a {
+  color: #ab2f2f;
+  text-decoration: none;
+}
+
+.form .register-form {
+  display: none;
+}
